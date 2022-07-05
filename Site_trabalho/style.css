@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    --ff-primary: "Nunito", helvetica, arial, sans-serif;
+
+    --clr-green-dark: #049a40;
+    --clr-green-ligth: #0bf96a;
+    --clr-pink-dark: #e10bf9;
+    --clr-pink-ligth: #F3A0FD;
+    --clr-white: #F5F5F5;
+
+}
+
+body{
+    background-color: var(--clr-white);
+    font-family: var(--ff-primary);
+}
+
+a,
+a:hover,
+a:active,
+a:link,
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+/*Menu*/
+
+.menu{
+    background-color: var(--clr-green-ligth);
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    
+}
+
+.menu_logo{
+    display: flex;   
+}
+
+.name{
+    padding-top: 20px;
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+
+img{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.nav_list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav_link{
+    padding: 20px 10px;
+}
+
+.intro{
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+hr{
+    border: none;
+    background-color: var(--clr-pink-dark);
+    height: 2px;
+    width: 150px;
+    margin: 20px auto;
+
+}
+/*Quem somos*/
+p{ 
+    line-height: 10px;
+    padding: 0 10px;
+}
+
+.section_titulo{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+
+}
+
+.somos{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.somos-c{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.somos_texto{
+    flex: 6 1 160px;
+
+}
+
+.somos_img{
+    flex: 1 1 350px;
+}
+
+.img_somos{
+    width: 300px;
+    height: 300px;
+    display: block;
+    max-width: 100%;
+}
+
+/*Cursos*/
+
+.cursos{
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.curso_c{
+    display: flex;
+    justify-content: center;
+}
+
+.curso{
+    width: 280px;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.curso_titulo{
+    text-align: center;
+    font-size: 1.0rem;
+    margin: 10px 0 5px 0 ;
+}
+
+.curso_texto{
+    line-height: 20px;
+    padding: 0 10px;
+}
+
+.curso_img{
+    align-items: center;
+    margin: 0 auto;
+    width: 150px;
+    height: 100px;
+
+}
+
+.planos{
+    background-color: #F3A0FD;
+}
+
+.planos_c{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+}
+
+.plano{
+    width: 290px;
+    margin: 10px;
+    border: 2px solid var(--clr-green-ligth);
+}
+
+.plano_titulo{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto;
+
+}
+
+.plano_preco{
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.plano_preco sup{
+    position: relative;
+    font-size: 1.5rem;
+    left: 5px;
+}
+
+.plano_divisor{
+    background-color: var(--clr-green-ligth);
+    width: 150px;
+    margin: 5px auto;
+}
+
+.plano_lista{
+    max-width: 195px;
+    margin: 0 auto;
+}
+
+.plano_lista_item {
+    margin: 10px 0;
+    font-style: italic;
+    list-style: circle;
+
+}
+
+.plano_btn_comprar{
+    display: block;
+    max-width: 180px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid var(--clr-green-ligth);
+}
+
+.plano:last-child {
+    background-color: var(--clr-green-ligth);
+}
+
+.plano:last-child, .plano:last-child .plano_btn_comprar{
+    border: 2px solid var(--clr-pink-dark);
+}
+
+.plano:last-child .plano_lista_item::before, .plano:last-child .plano_divisor{
+    background-color: var(--clr-pink-dark);
+}
+
+/*Vantagens*/
+
+.vantagens{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vantagem{
+    max-width: 500px;
+    margin: 10px ;
+}
+
+.vantagem_titulo{
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+p{
+    padding: 0px 10px;
+    line-height: 20px;
+}
+
+.footer{
+    background-color: var(--clr-pink-ligth);
+    display: flex;
+    padding: 55px ;
+    margin: 0 auto;
+
+}
+
+.inform{
+    font-size: 20px;
+    padding: 5px;
+    line-height: 30px;
+}
+.footer_logo{
+    margin-left: 500px;
+    margin-bottom: 50px;
+}
+
+
+
+
