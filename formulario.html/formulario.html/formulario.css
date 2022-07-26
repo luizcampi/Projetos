@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+#titulo{
+    font-family: sans-serif;
+    color: greenyellow;
+    margin-left: 7%;
+}
+
+#subtitulo{
+    font-family: sans-serif;
+    color: black;
+    margin-left: 10%;
+
+}
+
+fieldset{
+    border: 0;
+}
+
+body{
+    background: black;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: green;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: green;
+    display: block;
+}
+
+fieldset .grupo{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+    padding: 0.2em;
+    border: 1px solid rgb(0, 128, 0);
+    box-shadow: 2px 2px 2px rgb(173, 255, 47);
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background-color: rgb(12, 223, 58);
+}
+
+.botao{
+    font-size: 1.2em;
+    background: greenyellow;
+    border: 0;
+    margin-bottom: 1em;
+    color: white;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px white;
+    text-shadow: 1px 1px 1px green;
+    position: absolute;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover{
+    background-color: white;
+    color: greenyellow;
+    box-shadow: inset 2px 2px 2px black;
+    text-shadow: none;
+
+}
+
+.botao, select{
+    cursor: pointer;
+
+}
+
+#check {
+    display: inline-block;
+}
